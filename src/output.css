@@ -12,6 +12,7 @@
     --spacing: 0.25rem;
     --font-weight-semibold: 600;
     --radius-lg: 0.5rem;
+    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-inter: "Inter", sans-serif;
@@ -195,6 +196,12 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
   .block {
     display: block;
   }
@@ -263,6 +270,12 @@
   }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -384,12 +397,26 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  @media (width >= 40rem) {
+    .sm\:w-full {
+      width: 100%;
+    }
+  }
   @media (width >= 48rem) {
+    .md\:flex {
+      display: flex;
+    }
     .md\:w-187\.75 {
       width: calc(var(--spacing) * 187.75);
     }
     .md\:flex-row {
       flex-direction: row;
+    }
+    .md\:flex-wrap {
+      flex-wrap: wrap;
+    }
+    .md\:justify-between {
+      justify-content: space-between;
     }
   }
   @media (width >= 64rem) {
