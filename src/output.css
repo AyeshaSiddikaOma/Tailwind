@@ -12,13 +12,13 @@
     --spacing: 0.25rem;
     --font-weight-semibold: 600;
     --radius-lg: 0.5rem;
-    --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-inter: "Inter", sans-serif;
     --color-pink: #E90024;
     --color-grey: #4B4B4B;
     --color-grey2: #F4F4F4;
+    --color-kalo: #1E1E1E;
   }
 }
 @layer base {
@@ -215,6 +215,12 @@
   .w-150 {
     width: calc(var(--spacing) * 150);
   }
+  .w-187 {
+    width: calc(var(--spacing) * 187);
+  }
+  .w-187\.75 {
+    width: calc(var(--spacing) * 187.75);
+  }
   .w-full {
     width: 100%;
   }
@@ -242,18 +248,12 @@
   .gap-15 {
     gap: calc(var(--spacing) * 15);
   }
-  .rounded-3xl {
-    border-radius: var(--radius-3xl);
-  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .bg-grey {
-    background-color: var(--color-grey);
   }
   .bg-grey2 {
     background-color: var(--color-grey2);
@@ -273,20 +273,8 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
-  .py-6 {
-    padding-block: calc(var(--spacing) * 6);
-  }
-  .py-8 {
-    padding-block: calc(var(--spacing) * 8);
-  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
-  }
-  .py-15 {
-    padding-block: calc(var(--spacing) * 15);
-  }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
   }
   .text-center {
     text-align: center;
@@ -306,6 +294,14 @@
   .text-\[65px\] {
     font-size: 65px;
   }
+  .leading-6 {
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
+  }
+  .leading-6\.5 {
+    --tw-leading: calc(var(--spacing) * 6.5);
+    line-height: calc(var(--spacing) * 6.5);
+  }
   .leading-10 {
     --tw-leading: calc(var(--spacing) * 10);
     line-height: calc(var(--spacing) * 10);
@@ -318,32 +314,15 @@
     --tw-leading: calc(var(--spacing) * 17.5);
     line-height: calc(var(--spacing) * 17.5);
   }
-  .leading-\[24px\] {
-    --tw-leading: 24px;
-    line-height: 24px;
-  }
-  .leading-\[34px\] {
-    --tw-leading: 34px;
-    line-height: 34px;
-  }
-  .leading-\[37px\] {
-    --tw-leading: 37px;
-    line-height: 37px;
-  }
-  .leading-\[40px\] {
-    --tw-leading: 40px;
-    line-height: 40px;
-  }
-  .leading-\[px\] {
-    --tw-leading: px;
-    line-height: px;
-  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
   .text-grey {
     color: var(--color-grey);
+  }
+  .text-kalo {
+    color: var(--color-kalo);
   }
   .text-pink {
     color: var(--color-pink);
