@@ -643,8 +643,20 @@
     .group-hover\:text-pink:is(:where(.group):hover *) {
       color: var(--color-pink);
     }
+    .hover\:-translate-y-0:hover {
+      --tw-translate-y: 0px;
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .hover\:-translate-y-0\.5:hover {
+      --tw-translate-y: calc(var(--spacing) * -0.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
     .hover\:-translate-y-5:hover {
       --tw-translate-y: calc(var(--spacing) * -5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .hover\:-translate-y-\[2px\]:hover {
+      --tw-translate-y: calc(2px * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
     .hover\:bg-\[\#d90035\]:hover {
@@ -652,6 +664,9 @@
     }
     .hover\:bg-pink:hover {
       background-color: var(--color-pink);
+    }
+    .hover\:text-pink:hover {
+      color: var(--color-pink);
     }
     .hover\:text-white:hover {
       color: var(--color-white);
