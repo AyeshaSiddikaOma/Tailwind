@@ -8,6 +8,8 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -199,6 +201,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -253,6 +258,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -262,11 +270,23 @@
   .justify-between {
     justify-content: space-between;
   }
+  .gap-1 {
+    gap: var(--spacing);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
@@ -295,11 +315,20 @@
   .border-pink {
     border-color: var(--color-pink);
   }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
+  .bg-amber-700 {
+    background-color: var(--color-amber-700);
+  }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
   .bg-grey2 {
     background-color: var(--color-grey2);
+  }
+  .bg-light-grey {
+    background-color: var(--color-light-grey);
   }
   .bg-light-pink {
     background-color: var(--color-light-pink);
@@ -309,6 +338,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -324,6 +356,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -494,15 +529,47 @@
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
+  @media (width >= 40rem) {
+    .sm\:flex {
+      display: flex;
+    }
+    .sm\:flex-col {
+      flex-direction: column;
+    }
+    .sm\:flex-wrap {
+      flex-wrap: wrap;
+    }
+  }
   @media (width >= 48rem) {
+    .md\:flex {
+      display: flex;
+    }
+    .md\:w-1\/2 {
+      width: calc(1 / 2 * 100%);
+    }
     .md\:w-187\.75 {
       width: calc(var(--spacing) * 187.75);
     }
     .md\:w-\[33\%\] {
       width: 33%;
     }
+    .md\:w-full {
+      width: 100%;
+    }
+    .md\:flex-1\/2 {
+      flex: calc(1/2 * 100%);
+    }
+    .md\:flex-2 {
+      flex: 2;
+    }
+    .md\:flex-12 {
+      flex: 12;
+    }
     .md\:flex-row {
       flex-direction: row;
+    }
+    .md\:flex-wrap {
+      flex-wrap: wrap;
     }
     .md\:justify-between {
       justify-content: space-between;
